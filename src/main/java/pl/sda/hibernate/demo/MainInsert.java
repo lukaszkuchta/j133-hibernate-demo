@@ -3,10 +3,9 @@ package pl.sda.hibernate.demo;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import java.io.IOException;
 import java.time.LocalDate;
 
-public class Main {
+public class MainInsert {
     public static void main(String[] args) {
         try(Session session = HibarnateUtil.INSTANCE.getSessionFactory().openSession()){
             Transaction transaction = session.beginTransaction();
